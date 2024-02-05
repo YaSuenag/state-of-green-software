@@ -57,7 +57,7 @@ import Layout from "../../layouts/Layout.astro";
   }
 </style>
 <script>
-  import surveryResults from "../../survey-results.json";
+  import surveryResults from "./survey-results.json";
   import Chart from "chart.js/auto";
   // Get the wrapper element and add new div for each survey result and use result.data to populate the chart with chartjs
   const wrapper = document.getElementById("wrapper") as HTMLCanvasElement;
@@ -178,36 +178,36 @@ import Layout from "../../layouts/Layout.astro";
   // Add one more graph with the following Q23data
   const Q23data = {
     question:
-      "How would you rank the following in order of importance? You can drag and drop the options to order them with the top one being the most important (1 = the most important).",
+      "以下の項目を、重要度の高い順に並べてください。ドラッグアンドドロップで項目を並び替え、1が最も重要なものとなります。",
     answered: 1718,
     skipped: 473,
     data: [
       {
-        answer_choices: "Security",
+        answer_choices: "セキュリティ",
         responses: 928,
         response_percent: 54.24,
         score: 4.18,
       },
       {
-        answer_choices: "Reliability",
+        answer_choices: "信頼性",
         responses: 244,
         response_percent: 14.27,
         score: 3.36,
       },
       {
-        answer_choices: "Sustainability",
+        answer_choices: "持続可能性",
         responses: 284,
         response_percent: 16.56,
         score: 2.84,
       },
       {
-        answer_choices: "Performance",
+        answer_choices: "パフォーマンス",
         responses: 137,
         response_percent: 8.0,
         score: 2.65,
       },
       {
-        answer_choices: "Cost",
+        answer_choices: "費用",
         responses: 125,
         response_percent: 7.3,
         score: 1.98,
